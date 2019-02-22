@@ -1,7 +1,7 @@
-#Simulation of a bank administration 
-import random,os                                                 #Works beautifully
+#creation of Bank account
+import random,os                                                
 class Data_base:
-	def __init__(self):                                          #{"Name":[amount,password]}
+	def __init__(self):                                         
 		self.current_users={}
 class New_user(Data_base):
 	def create_user(self,user_name,initial_deposit):
