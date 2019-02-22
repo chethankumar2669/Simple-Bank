@@ -8,7 +8,7 @@ class New_user(Data_base):
 		self.new_password=random.randint(10000,99999)
 		self.initial_deposit=initial_deposit
 		self.user_name=user_name
-		print(f"Congratulations {self.user_name} your account has been added successfully") 
+		print(f"Congratulations {self.user_name} your account has been created successfully") 
 		print(f"Please remember this password for future use : {self.new_password}")
 		print("-------------------------------------------------------")
 		self.current_users[self.user_name]=[self.initial_deposit,self.new_password]
