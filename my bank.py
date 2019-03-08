@@ -10,7 +10,7 @@ class New_user(Data_base):
 		self.user_name=user_name
 		print(f"Congratulations {self.user_name} your account has been created successfully") 
 		print(f"Please remember this password for future use : {self.new_password}")
-		print("-------------------------------------------------------")
+		print("..............................................................")
 		self.current_users[self.user_name]=[self.initial_deposit,self.new_password]
 class Existing_user(New_user):
 	def check_user(self,user_name,user_password,user_choice):
@@ -40,7 +40,7 @@ class Existing_user(New_user):
 				print("Please verify your password")
 		else:
 			print(f"user name : {self.user_name} is not identified")
-		print("-------------------------------------------------------")
+		print("............................................................")
 if __name__=="__main__":
 	cal=Existing_user()
 	print("Simulation of Bank administration \n")
